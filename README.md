@@ -33,4 +33,23 @@ OUTPUT:
 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'}
 ```
 
-Then copy and paste your output into your python code, as your headers dictionary!
+Then define this as headers, and you can use it with requests.
+
+```python
+
+import requests
+
+url = 'https://example.com'
+
+headers = {'sec-ch-ua': '"Google Chrome";v="93", " Not;A Brand";v="99", "Chromium";v="93"',
+'sec-ch-ua-mobile': '?0',
+'sec-ch-ua-platform': '"Windows"',
+'sec-fetch-dest': 'empty',
+'sec-fetch-mode': 'cors',
+'sec-fetch-site': 'same-origin',
+'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'}
+
+requests.post(url=url,headers=headers)
+```
+
+Then copy and paste your output into your python code, and you can use it as your headers dictionary!
