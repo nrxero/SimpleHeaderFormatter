@@ -2,11 +2,11 @@
 A very simple tool to output raw http request headers as a string to be used as a dictionary for python requests. Extremely simple program, but can save a lot of time when web scraping with headers!
 
 **Usage:**
-
+```python
 from ConvertToDictionary import HeaderConvert
 
 print(HeaderConvert('''RAW_HEADERS'''))
-
+```
 
 **Example:**
 
