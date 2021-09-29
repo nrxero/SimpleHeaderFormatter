@@ -33,7 +33,7 @@ OUTPUT:
 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'}
 ```
 
-Then define this as headers, and you can use it with requests.
+TYou can copy and paste this output and use it as your headers for requests.
 
 ```python
 
@@ -52,4 +52,3 @@ headers = {'sec-ch-ua': '"Google Chrome";v="93", " Not;A Brand";v="99", "Chromiu
 requests.post(url=url,headers=headers)
 ```
 
-Then copy and paste your output into your python code, and you can use it as your headers dictionary!
